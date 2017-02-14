@@ -1,0 +1,135 @@
+/* =================================
+  Base Element Styles
+==================================== */
+
+body {
+	text-align: left;
+	line-height: 1.6;
+	color: #3a3a3a;
+}
+
+header {
+  background: #f07057;
+  height: 200px;
+  padding-top: 50px;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+
+/* =================================
+  Flexbox
+==================================== */
+
+
+
+.container {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+}
+
+
+.container {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.item {
+	flex: 1;
+}
+
+.item-2 {
+	flex: 2;
+}
+
+
+
+/** Just added, trying to center header copy when
+larger than 1026 and smallther than 768 **/
+.row {
+		width: 100%;
+		margin: 0 auto;
+	}
+
+/** This is the body, with light blue background **/
+.wrapper {
+	width: 70%;
+	margin: auto;
+	padding: 20px 20px 20px 20px;
+	background: #d9e4ea;
+}
+
+
+/* ----there might not be anything here---- */
+#content {
+	width: 100%;
+	position: center;
+	top: auto;
+	background: red;
+	height: 10px;
+}
+
+/* ----Links in nav bar, copy---- */
+
+<style>
+
+.white {
+	color: white;
+	text-decoration: none;
+}
+
+.h2 {
+	position: left;
+	color: blue;
+	text-decoration: none;
+}
+
+/* ---- Layout Containers ---- */
+.col {
+	display: block;
+	width: 50%;
+	background: #eeeeee;
+}
+
+
+.main-nav  {
+
+	color: white;
+	display: inline;
+	text-align: center;
+	padding: 10px 15px;
+}
+
+
+main-footer {
+		background: #d9e4ea;
+}
+
+/*---- Media Queries-----*/
+
+@media (min-width: 769px) {
+
+
+	.row {
+			width: 100%;
+			margin: 0 auto;
+		}
+
+		.h1 {
+			text-align: center;
+	}
+}
+
+
+@media (min-width: 1025px) {
+
+.row {
+		width: 100%;
+		max-width: 1150px;
+		}
+
+		}
+
+}
