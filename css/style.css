@@ -1,135 +1,199 @@
 /* =================================
   Base Element Styles
-==================================== */
+	HTML
+	BODY
+	H1-H4
+	P
+	Table
+	Button
+	Focus
+	Image
+	Wrap
 
-body {
-	text-align: left;
-	line-height: 1.6;
-	color: #3a3a3a;
+put this in .main-header
+		background-image: url(../img/SBlogo.png);
+==================================== */
+.containerparallax {
+  padding-top: 80px;
+	width: 60%;
+	margin: 0 auto;
 }
 
-header {
-  background: #f07057;
-  height: 200px;
-  padding-top: 50px;
-  position: fixed;
-  top: 0;
-  width: 100%;
+.container {
+  width: 60%;
+	margin: 0 auto;
+}
+
+
+p {
+  font-family: 'Dosis', sans-serif;
+  font-size: 16px;
+}
+
+body {
+  text-align: left;
+	line-height: 1.6;
+	margin: 0, auto;
+	color: #3a3a3a;
+	background: linear-gradient(#eef3f6, #bdd2db);
+}
+
+.main-footer {
+	text-align: center;
+	padding: 2em 0;
+	background-color: #474747;
+	color: white;
 }
 
 
 /* =================================
-  Flexbox
+Navigation
+
+==================================== */
+.main-nav ul li {
+	text-align: center;
+	margin-top: 6px;
+	margin-bottom: 6px;
+	letter-spacing: 0.03em;
+	text-transform: uppercase;
+  display: inline;
+  font-family: 'Dosis', sans-serif;
+  display: block;
+
+}
+.main-nav ul {
+  font-family: 'Dosis', sans-serif;
+  text-align: center;
+  margin: 10%;
+}
+
+.main-nav ul li {
+  font-family: 'Dosis', sans-serif;
+display: block;
+ padding: 0 1em;
+ line-height: 3em;
+ text-transform: uppercase;
+float: none;
+}
+
+
+
+
+
+a {
+ color: #FAF8F0;
+}
+
+a:hover,
+a:focus  {
+ color: #5B8FA6;
+}
+
+
+
+
+
+#logo {
+  background-repeat: no-repeat;
+  position: absolute;
+  display: block;
+
+
+}
+
+
+
+.floatingMenu {
+  background: #474747;
+	align: center;
+	background-repeat: no-repeat;
+	height: 1em;
+	position: fixed;
+	top: 0;
+	width: 100%;
+	padding: 2.5em 0;
+}
+
+
+h2 {
+  display: inline-block;
+  font-size: 26px;
+  font-family: 'Dosis', sans-serif;
+  font-style: oblique;
+	color: #DD3B2B;
+}
+/*----------------------
+  $NAVBAR
+    basic navbar styling
+
+		nav ul li:hover {
+		  background: #5B8FA6;
+
+		}
+  ----------------------*/
+
+
+
+
+
+
+/* =================================
+  Image
 ==================================== */
 
-
-
-.container {
-	display: flex;
-	flex-wrap: wrap;
-	justify-content: space-around;
-}
-
-
-.container {
-	display: flex;
-	flex-wrap: wrap;
-}
-
-.item {
-	flex: 1;
-}
-
-.item-2 {
-	flex: 2;
+.img1 {
+	width: 150px;
+	height: 150px;
+	border-radius: 50%;
 }
 
 
 
-/** Just added, trying to center header copy when
-larger than 1026 and smallther than 768 **/
-.row {
-		width: 100%;
-		margin: 0 auto;
-	}
-
-/** This is the body, with light blue background **/
-.wrapper {
-	width: 70%;
-	margin: auto;
-	padding: 20px 20px 20px 20px;
-	background: #d9e4ea;
-}
-
-
-/* ----there might not be anything here---- */
-#content {
-	width: 100%;
-	position: center;
-	top: auto;
-	background: red;
-	height: 10px;
-}
-
-/* ----Links in nav bar, copy---- */
-
-<style>
-
-.white {
-	color: white;
-	text-decoration: none;
-}
-
-.h2 {
-	position: left;
-	color: blue;
-	text-decoration: none;
-}
-
-/* ---- Layout Containers ---- */
-.col {
-	display: block;
-	width: 50%;
-	background: #eeeeee;
-}
-
-
-.main-nav  {
-
-	color: white;
-	display: inline;
-	text-align: center;
-	padding: 10px 15px;
-}
-
-
-main-footer {
-		background: #d9e4ea;
-}
-
-/*---- Media Queries-----*/
+/* =================================
+           Media Queries
+==================================== */
 
 @media (min-width: 769px) {
+.wrap {
+	min-height: calc(100vh - 89px); /* 100vh = view port height*/
+}
 
 
-	.row {
-			width: 100%;
-			margin: 0 auto;
-		}
 
-		.h1 {
-			text-align: center;
-	}
+.name,
+.main-nav,
+.main-nav li {
+  display: inline-block;
+  font-family: 'Dosis', sans-serif;
+}
+
+
+p {
+  font-family: 'Dosis', sans-serif;
+  font-size: 18px;
 }
 
 
 @media (min-width: 1025px) {
 
-.row {
-		width: 100%;
-		max-width: 1150px;
-		}
+  .parallax {
+  	background-image: url(../img/computer.jpg);
+  	height: 150px;
+  	background-attachment: fixed;
+  	background-position: center;
+  	background-repeat: no-repeat;
+  	background-size: 100%;
+  	color: white;
+  	padding: 10% 10%;
+  	font-weight: normal;
+  }
 
-		}
+  .containerparallax {
+    padding: 20px 20px;
+    width: 60%;
+  	margin: 0 auto;
+  }
+
+
 
 }
