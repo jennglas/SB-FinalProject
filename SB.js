@@ -1,26 +1,28 @@
+
 /* =================================
-This is to scroll smooth for the anchor tags
+MAP API
 ==================================== */
 
-$('a[href^="#"]').on('click', function(event) {
-
-    var target = $(this.getAttribute('href'));
-
-    if( target.length ) {
-        event.preventDefault();
-        $('html, body').stop().animate({
-            scrollTop: target.offset().top
-        }, 1000);
-    }
-
-});
 
 
 /* =================================
-This is for the floatingMenu so it doesn't cover the text under
+Smooth scroll
 ==================================== */
 
-$(document).ready(function() {
-    var doesntcovertext = $('#floatingMenu').position().top + $('#header').height();
-    $('#content').css('margin-top',contentPlacement);
-});
+
+$(function () {
+  $('.internallink').on('click', function () {
+    var target= $(this)[0].href;
+    targetID = target.substring(target.indexOf("#"));
+    console.log(targetID);
+    targetElement = $(targetID);
+    targetOffset = targetElement.offset().top - 80;
+    $('html, body').animate({
+           scrollTop: targetOffset
+         }, 1000);
+         return false;
+
+  });
+
+
+  });

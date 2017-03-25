@@ -1,42 +1,71 @@
+
+
 /* =================================
-  Base Element Styles
-	HTML
-	BODY
-	H1-H4
-	P
-	Table
-	Button
-	Focus
-	Image
-	Wrap
+Header
 
-put this in .main-header
-		background-image: url(../img/SBlogo.png);
 ==================================== */
-.containerparallax {
-  padding-top: 80px;
-	width: 60%;
+
+
+.main-header {
+	padding-top: .5em;
+	padding-bottom: .5em;
+  position: fixed;
+  top: 0;
+  height: 60px;
+  width: 100%;
+  background-color: #3a3a3a;
+}
+
+.logo {
+  background-repeat: no-repeat;
+	padding: 10px auto;
+
+}
+
+
+/* === ul === */
+.main-nav {
+	margin-top: px;
+}
+
+.logo,
+.main-nav a {
+	text-align: center;
+	display: block;
+}
+
+
+.o {
+  width: 80%;
+  align-items: center;
+}
+
+.outer-container {
+	margin: 0 auto;
+	margin-top: 25px;
+}
+
+.square-container {
 	margin: 0 auto;
 }
 
-.container {
-  width: 60%;
-	margin: 0 auto;
+.container2 {
+  width: auto;
+  align-items: center;
+  margin-top: 25px;
 }
 
 
-p {
-  font-family: 'Dosis', sans-serif;
-  font-size: 16px;
+.figcaption {
+  font-size: .9em;
+  line-height: 1.5;
+  color: #fff;
+  padding: 1em;
+  background: #3a3a3a;
+  position: absolute;
+
 }
 
-body {
-  text-align: left;
-	line-height: 1.6;
-	margin: 0, auto;
-	color: #3a3a3a;
-	background: linear-gradient(#eef3f6, #bdd2db);
-}
 
 .main-footer {
 	text-align: center;
@@ -47,104 +76,40 @@ body {
 
 
 /* =================================
-Navigation
-
+Body Copy
 ==================================== */
-.main-nav ul li {
-	text-align: center;
-	margin-top: 6px;
-	margin-bottom: 6px;
-	letter-spacing: 0.03em;
-	text-transform: uppercase;
-  display: inline;
-  font-family: 'Dosis', sans-serif;
-  display: block;
-
-}
-.main-nav ul {
-  font-family: 'Dosis', sans-serif;
-  text-align: center;
-  margin: 10%;
-}
-
-.main-nav ul li {
-  font-family: 'Dosis', sans-serif;
-display: block;
- padding: 0 1em;
- line-height: 3em;
- text-transform: uppercase;
-float: none;
-}
-
-
-
-
-
-a {
- color: #FAF8F0;
-}
-
-a:hover,
-a:focus  {
- color: #5B8FA6;
-}
-
-
-
-
-
-#logo {
-  background-repeat: no-repeat;
-  position: absolute;
-  display: block;
-
-
-}
-
-
-
-.floatingMenu {
-  background: #474747;
-	align: center;
-	background-repeat: no-repeat;
-	height: 1em;
-	position: fixed;
-	top: 0;
-	width: 100%;
-	padding: 2.5em 0;
-}
-
-
 h2 {
-  display: inline-block;
+  padding: 25px 0 -20px 0;
+  display: block;
+  text-align: left;
   font-size: 26px;
   font-family: 'Dosis', sans-serif;
   font-style: oblique;
 	color: #DD3B2B;
+  clear: both;
 }
-/*----------------------
-  $NAVBAR
-    basic navbar styling
 
-		nav ul li:hover {
-		  background: #5B8FA6;
+h3 {
+  font-style: italic;
+  font-size: 30px;
+}
 
-		}
-  ----------------------*/
+h4 {
+  display: block;
+  text-align: left;
+  font-size: 20px;
+  font-family: 'Dosis', sans-serif;
+  font-style: oblique;
+	color: #474747 ;
+}
 
-
-
-
-
-
-/* =================================
-  Image
-==================================== */
-
-.img1 {
-	width: 150px;
-	height: 150px;
-	border-radius: 50%;
+body {
+  font-family: 'Dosis', sans-serif;
+  font-size: 18px;
+  text-align: left;
+	line-height: 1.6;
+  color: #3a3a3a;
+	background: linear-gradient(#eef3f6, #bdd2db);
 }
 
 
@@ -153,47 +118,73 @@ h2 {
            Media Queries
 ==================================== */
 
-@media (min-width: 769px) {
+@media (min-width: 340px) {
+
 .wrap {
 	min-height: calc(100vh - 89px); /* 100vh = view port height*/
 }
 
 
+.logo {
+  background-repeat: no-repeat;
+  float: left;
+}
 
-.name,
-.main-nav,
+
+
+.main-nav {
+  float: right;
+}
+
 .main-nav li {
   display: inline-block;
+  margin-left: 15px;
+}
+
+h4 {
+  display: block;
+  text-align: center;
+  font-size: 20px;
   font-family: 'Dosis', sans-serif;
+  font-style: oblique;
+	color: #fff;
 }
 
 
-p {
-  font-family: 'Dosis', sans-serif;
-  font-size: 18px;
+.container {
+  width: 60%;
+	margin: 0 auto;
 }
 
 
-@media (min-width: 1025px) {
+
+@media (min-width: 767px) {
 
   .parallax {
-  	background-image: url(../img/computer.jpg);
-  	height: 150px;
+    background-image: url(../img/computer.jpg);
+  	height: 200px;
   	background-attachment: fixed;
   	background-position: center;
   	background-repeat: no-repeat;
   	background-size: 100%;
   	color: white;
-  	padding: 10% 10%;
+	 margin-top: 80px;
   	font-weight: normal;
   }
 
-  .containerparallax {
-    padding: 20px 20px;
-    width: 60%;
-  	margin: 0 auto;
-  }
+	.square {
+		margin: 10px auto;
+	  vertical-align: top;
+	  height: 200px;
+	  width: 200px;
+	  background-color: #DD3B2B;
+	  display: inline-block;
+	  text-align: left;
+	  padding: .025em 20px;
+	  border-radius: 4px;
 
-
-
+	}
 }
+
+
+@media (min-width: 1342rpx) {

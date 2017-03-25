@@ -1,60 +1,42 @@
+<!--Test for Git NEW branch-->
+
 <!DOCTYPE html>
 <html>
-<head>
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Shark Byte Computer Solutions</title>
-	<link rel="stylesheet" href="css/normalize.css">
-	<script src="SB.js"></script>
-	<link rel="stylesheet" href="css/style.css">
-<link href="https://fonts.googleapis.com/css?family=Dosis:400,500,800" rel="stylesheet">
 
-	<!-- BOOTSTRAP Latest compiled and minified CSS
-
-
-NEED TO PUT JAVASCRIPT HERE...in the head
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
-
-
-	link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-
- -->
- <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDJkgNst-zqariA6qCQQaxv50Fh3eTGqKI&callback=initMap"
- type="text/javascript"></script>
-
-</head>
-
-
-
-<body>
-	<div class="wrap"> <!nothing here yet!>
-
-		<header class="floatingMenu">
-			<div class="container">
-				<img id="logo" img src="img/WhiteLogo.png" alt="logo">
-				<a id="logo" href=""></a>
-				<ul class="main-nav">
-						<li><a href="#About_hyperlink">About</a></li>
-	  				<li><a href="#Test_hyperlink">Click</a></li>
-	  		</ul>
+	<head>
+		<title>Shark Byte Computer Solutions</title>
+			<meta name="viewport" content="width=device-width, initial-scale=1.0">
+			<!-- Bootstrap -->
+			<link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
+			<!-- My CSS -->
+			<link rel="stylesheet" href="css/style.css">
+			<!-- Normalize -->
+			<link rel="normalize-stylesheet" href="css/normalize.css">
+			<link href="https://fonts.googleapis.com/css?family=Dosis:400,500,800" rel="stylesheet">
+			<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDJkgNst-zqariA6qCQQaxv50Fh3eTGqKI&callback=initMap" type="text/javascript"></script>
+	</head>
+	<body>
+		<div>			<!--Not sure if I need this -->
+			<header class="main-header">
+				<div>
+					<img class="logo" src="img/Whitelogo.png" alt="LOGO">
+					<ul class="main-nav">
+						<li><a class="internallink" href="#About_hyperlink"="#">Services</a></li>
+						<li><a class="internallink" href="#Test_hyperlink">About</a></li>
+					</ul>
+				</div>
+				</header>
 			</div>
-		</header>
-
-
-
-
-
-
-<!This is under container CSS>
 
 
 
 
 		<div class="parallax">
-			<div class="containerparallax">
-
-			<h2>Shark Bytes</h2> <h3>Computer Solutions</p>
-			<p class="p1"> Blah text Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
-		</div>
+			<div>
+				<h1>Here for all your digital business needs.</h1>
+				<h2>Sharkbyte Computer Solutions</h2>
+			  <p class="p1"> Blah text Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+			</div>
 		</div>
 
 
@@ -62,37 +44,112 @@ NEED TO PUT JAVASCRIPT HERE...in the head
 
 
 <div class="container">
-
-<h2><a id="About_hyperlink">About</a></h2>
-<img1 src="./img/Marshall.jpg" alt="Image of Marshall">
-<p> Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
-<p> Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+<h2><a id="About_hyperlink">Services</a></h2>
 
 
+<div class="outer-container">
+	<div class="square-container">
+	<div class="square">
+		<h4>Computer Repair</h4>
+		<ul>
+			<li>Virus Removal</li>
+			<li>Backup Software</li>
+			<li>Memory & Hard Drive Upgrade	</li>
+		</ul>
+	</div>
 
-<h2> 	<a id="Test_hyperlink">Test Hyper</a></h2>
-<p> Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
-<p> Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
 
+<div class="square">
+		<h4>Computer Replacement</h4>
+		<ul>
+			<li>New Computer</li>
+			<li>Procurement</li>
+			<li>Installation</li>
+		</ul>
+	</div>
+
+<div class="square">
+		<h4>Network Repair</h4>
+		<ul>
+			<li>Reconfigure Wireless</li>
+			<li>Procurement</li>
+			<li>Add addition devices</li>
+		</ul>
+</div>
 </div>
 
 
-<!-- BOOTSTRAP Latest compiled and minified CSS -->
+
+<div class="square-container">
+	<div class="square">
+ <h4>New Basic Email Setup</h4>
+ <ul>
+		 <li>Google G suite</li>
+		 <li>Website Setup</li>
+		 <li>	Microsoft Office 365</li>
+	 </ul>
+	</div>
+
+
+<div class="square">
+	<h4>Network Replacement</h4>
+	<ul>
+			<li>Add Firewall/Router</li>
+			<li>Website Setup</li>
+			<li>GoDaddy website</li>
+	</ul>
+</div>
+
+
+<div class="square">
+ <h4>User Experience</h4>
+ <ul>
+		 <li>Accessibility</li>
+		 <li>Interaction Design</li>
+		 <li>Prototypes</li>
+ </ul>
+</div>
+</div>
+</div>
+
+
+
+<h2> 	<a id="Test_hyperlink">About</a></h2>
+<p> SBCS was founded by Marshall Reinhart in 2016. Marshall's goal
+	 is to provide specialized IT services to small & local businesses.
+	 An Indiana University graduate, Marshall has 10+ years of IT
+	 experience ranging from complex networks to email & web services.</p>
+</div>
 
 </div>
-<iframe
-  width="600"
-  height="450"
-  frameborder="0" style="border:0"
-  src="https://www.google.com/maps/embed/v1/place?key=AIzaSyAotoA44bZQVw4JTAErLip4iGRVA7Jc-Ls
-    &q=Space+Needle,Seattle+WA" allowfullscreen>
-</iframe>
-
+</div>
+	</div>
 </div><!--comes from wrap above -->
 
+<script
+  src="https://code.jquery.com/jquery-3.2.1.min.js"
+  integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+  crossorigin="anonymous"></script>
+
+	<script src="SB.js"></script>
+
+<div>
+	<iframe width="100%" height="350" frameborder="0" style="border:0"
+	src="https://www.google.com/maps/embed/v1/view?zoom=12&center=38.2215,-85.6794&key=AIzaSyACi4FnFAiJ_rE2IAKVWgQnxdpM-tRl1DM" allowfullscreen></iframe>
+	</body>
+</div>
+
+</body>
+
+<div class="bottom">
 <footer class="main-footer">
 	<span>&copy;2017 Shark Byte Computer Solutions</span>
 </footer>
+</div>
 
-</body>
+
+
+
+<script src="https://maps.googleapis.com/maps/api/js?sensor=false"></script>
+
 </html>
