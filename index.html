@@ -1,4 +1,4 @@
-<!--Test for Git NEW branch-->
+
 
 <!DOCTYPE html>
 <html>
@@ -7,118 +7,107 @@
 		<title>Shark Byte Computer Solutions</title>
 			<meta name="viewport" content="width=device-width, initial-scale=1.0">
 			<!-- Bootstrap -->
-			<link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
+			<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
 			<!-- My CSS -->
 			<link rel="stylesheet" href="css/style.css">
 			<!-- Normalize -->
 			<link rel="normalize-stylesheet" href="css/normalize.css">
 			<link href="https://fonts.googleapis.com/css?family=Dosis:400,500,800" rel="stylesheet">
-			<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDJkgNst-zqariA6qCQQaxv50Fh3eTGqKI&callback=initMap" type="text/javascript"></script>
-	</head>
-	<body>
-		<div>			<!--Not sure if I need this -->
-			<header class="main-header">
-				<div>
-					<img class="logo" src="img/Whitelogo.png" alt="LOGO">
-					<ul class="main-nav">
-						<li><a class="internallink" href="#About_hyperlink"="#">Services</a></li>
-						<li><a class="internallink" href="#Test_hyperlink">About</a></li>
-					</ul>
-				</div>
-				</header>
-			</div>
+			<!-- JQuery CDN -->
+			<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+		</head>
 
-
-
-
+		<body>
+		<nav class="navbar main-header sticky-top"> <!--STARTS: sticky nav bar -->
+			<div class="conatinLogo">
+	  		<img class="logo" src="img/Whitelogo.png" alt="LOGO">
+		  	<ul class="main-nav">
+			  	<li>
+			  		<a class="internalLink" href="#Services_hyperlink"="#">Services</a>
+			  	</li>
+			  	<li>
+			  		<a class="internalLink" href="#About_hyperlink">About</a>
+			  	</li>
+		  	</ul>
+	  	</div>
+  	</nav>	<!-- ENDS: sticky nav bar  -->
 		<div class="parallax">
-			<div>
+			<div class="container-parallax">
 				<h1>Here for all your digital business needs.</h1>
-				<h2>Sharkbyte Computer Solutions</h2>
-			  <p class="p1"> Blah text Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+				<p class="hidden-sm-down"> Blah text Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
 			</div>
 		</div>
 
 
-<!This is under wrapper: body copy CSS>
+
+
+		<div class="container"> <!--Container comes from BS-->
+			<h2><a id="Services_hyperlink">Services</a></h2>
+			<div class="outer-container row"> <!--Outer cluster of squares-->
+				<div class="inner-container"> <!-- my-1= margin top and bottom 1, three top squares "d-flex justify-content-center my-1"-->
+					<div class="square my-1">
+						<h4>Computer Repair</h4>
+						<ul>
+							<li>Virus Removal</li>
+							<li>Backup Software</li>
+							<li>Memory & Hard Drive Upgrade</li>
+						</ul>
+					</div>
+					<div class="square my-1">
+						<h4>Computer Replacement</h4>
+						<ul>
+							<li>New Computer</li>
+							<li>Procurement</li>
+							<li>Installation</li>
+						</ul>
+					</div>
+					<div class="square my-1">
+						<h4>Network Repair</h4>
+						<ul>
+							<li>Reconfigure Wireless</li>
+							<li>Procurement</li>
+							<li>Add addition devices</li>
+						</ul>
+					</div>
+				</div> <!--closes three top squares-->
+
+				<div class="inner-container"> <!--three bottom squares-->
+					<div class="square  my-1">
+ 					<h4>New Basic Email Setup</h4>
+ 						<ul>
+		 					<li>Google G suite</li>
+		 					<li>Website Setup</li>
+		 				<li>Microsoft Office 365</li>
+	 				 </ul>
+					</div>
+
+					<div class="square my-1">
+						<h4>Network Replacement</h4>
+						<ul>
+							<li>Add Firewall/Router</li>
+							<li>Website Setup</li>
+							<li>GoDaddy website</li>
+						</ul>
+					</div>
+					<div class="square my-1">
+ 						<h4>User Experience</h4>
+ 							<ul>
+		 						<li>Accessibility</li>
+		 						<li>Interaction Design</li>
+		 						<li>Prototypes</li>
+ 							</ul>
+				  </div>
+				</div> <!--closes three bottom squares-->
+			</div> <!--closes outer cluster of squares-->
 
 
 <div class="container">
-<h2><a id="About_hyperlink">Services</a></h2>
-
-
-<div class="outer-container">
-	<div class="square-container">
-	<div class="square">
-		<h4>Computer Repair</h4>
-		<ul>
-			<li>Virus Removal</li>
-			<li>Backup Software</li>
-			<li>Memory & Hard Drive Upgrade	</li>
-		</ul>
-	</div>
-
-
-<div class="square">
-		<h4>Computer Replacement</h4>
-		<ul>
-			<li>New Computer</li>
-			<li>Procurement</li>
-			<li>Installation</li>
-		</ul>
-	</div>
-
-<div class="square">
-		<h4>Network Repair</h4>
-		<ul>
-			<li>Reconfigure Wireless</li>
-			<li>Procurement</li>
-			<li>Add addition devices</li>
-		</ul>
-</div>
-</div>
-
-
-
-<div class="square-container">
-	<div class="square">
- <h4>New Basic Email Setup</h4>
- <ul>
-		 <li>Google G suite</li>
-		 <li>Website Setup</li>
-		 <li>	Microsoft Office 365</li>
-	 </ul>
-	</div>
-
-
-<div class="square">
-	<h4>Network Replacement</h4>
-	<ul>
-			<li>Add Firewall/Router</li>
-			<li>Website Setup</li>
-			<li>GoDaddy website</li>
-	</ul>
-</div>
-
-
-<div class="square">
- <h4>User Experience</h4>
- <ul>
-		 <li>Accessibility</li>
-		 <li>Interaction Design</li>
-		 <li>Prototypes</li>
- </ul>
-</div>
-</div>
-</div>
-
-
-
-<h2> 	<a id="Test_hyperlink">About</a></h2>
-<p> SBCS was founded by Marshall Reinhart in 2016. Marshall's goal
+	<h2><a id="About_hyperlink">About</a></h2>
+		<p> SBCS was founded by Marshall Reinhart in 2016. Marshall's goal
 	 is to provide specialized IT services to small & local businesses.
 	 An Indiana University graduate, Marshall has 10+ years of IT
 	 experience ranging from complex networks to email & web services.</p>
+	</div>
 </div>
 
 </div>
@@ -126,30 +115,23 @@
 	</div>
 </div><!--comes from wrap above -->
 
-<script
-  src="https://code.jquery.com/jquery-3.2.1.min.js"
-  integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
-  crossorigin="anonymous"></script>
 
-	<script src="SB.js"></script>
+<!--Google Map API -->
 
-<div>
-	<iframe width="100%" height="350" frameborder="0" style="border:0"
-	src="https://www.google.com/maps/embed/v1/view?zoom=12&center=38.2215,-85.6794&key=AIzaSyACi4FnFAiJ_rE2IAKVWgQnxdpM-tRl1DM" allowfullscreen></iframe>
-	</body>
-</div>
+<div id="map"></div>
 
+	</div>
 </body>
 
 <div class="bottom">
-<footer class="main-footer">
-	<span>&copy;2017 Shark Byte Computer Solutions</span>
+	<footer class="main-footer">
+		<span>&copy;2017 Shark Byte Computer Solutions</span>
 </footer>
 </div>
 
-
-
-
-<script src="https://maps.googleapis.com/maps/api/js?sensor=false"></script>
+<script src="SB.js"></script>
+<script async defer
+src="https://maps.googleapis.com/maps/api/js?key=AIzaSyALL3ukDU75Em-V7BiL2wSejlyK1sRfGKE&callback=initMap">
+</script>
 
 </html>
